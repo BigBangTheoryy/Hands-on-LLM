@@ -41,3 +41,8 @@ token_id = lm_head_output[0, -1].argmax(-1)
 
 print("Token ID:", token_id)
 print("Decoded:", repr(tokenizer.decode(token_id)))
+
+
+print(lm_head_output[0].shape) # LM-Output
+
+print(model_output[0].shape)
